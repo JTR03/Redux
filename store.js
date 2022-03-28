@@ -17,3 +17,13 @@ store.getState();
 const action = {
     type: 'LOGIN'
 }
+
+// action Creator - simple JS function returning action, sends actions to the store to update state
+
+const actionCreator = ()=>{
+    return action
+}
+
+// dispatch - use to dispatch actions to store
+
+store.dispatch(actionCreator());
