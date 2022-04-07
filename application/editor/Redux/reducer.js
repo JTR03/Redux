@@ -1,6 +1,10 @@
 import { ADD_NOTE } from "./actions";
 
-export const addReducer = (state=["item", "item2"], action) => {
+const initialState = [
+   
+]
+
+export const addReducer = (state=initialState, action) => {
     switch(action.type){
         case ADD_NOTE:
             return [
